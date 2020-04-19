@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=700, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300&display=swap');
+    </style>
+    <link rel="stylesheet" href="resetStyles.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="view_head">
+            <span>Калькулятор</span>
+            <div class="view_head_buttons_container">
+                <button class="view_head_button view_head_button__underscore"><span>-</span></button>
+                <button class="view_head_button view_head_button__fullscreen"><span></span></button>
+                <button class="view_head_button view_head_button__close"><span></span></button>
+            </div>
+        </div>
+        <div class="menu_row">
+            <button class="menu_button">
+                <span></span>
+            </button>
+            <span>Обычный</span>
+            <button class="menu_button_collapse"><span></span></button>
+            <button class="menu_button_timeMachine"><span id="timeMachine_icon"></span></button>
+        </div>
+        <input type="number" nuumber value="0" class="input_field">
+        <div class="strange_btns">
+            <button class="strange__btn strange__btn__passive">MC</button>
+            <button class="strange__btn strange__btn__passive">MR</button>
+            <button class="strange__btn">M+</button>
+            <button class="strange__btn">M-</button>
+            <button class="strange__btn">MS</button>
+            <button class="strange__btn strange__btn__passive">M*</button>
+        </div>
+        <div class="grid_container">
+            <div class="grid_item"><button>%</button></div>
+            <div class="grid_item"><button>CE</button></div>
+            <div class="grid_item"><button>C</button></div>
+            <div class="grid_item"><button><span></span></button></div>
+            <div class="grid_item">
+                <button>
+            1/x
+              </button>
+             </div>
+            <div class="grid_item"><button> 
+                 <i>
+                x
+                <sup> </sup>
+            </i>
+            <sup>2</sup> </button></div>
+            <div class="grid_item"><button>
+                <sup>
+                <span style="font-size: 0.8em;">2</span>
+            </sup>√<span style="text-decoration: overline;">x</span>
+
+            </button></div>
+            <div class="grid_item" ><button><span></span></button></div>
+            <div class="grid_item numpad"><button>7</button></div>
+            <div class="grid_item numpad"><button>8</button></div>
+            <div class="grid_item numpad"><button>9</button></div>
+            <div class="grid_item"><button><span></span></button></div>
+            <div class="grid_item numpad"><button>4</button></div>
+            <div class="grid_item numpad"><button>5</button></div>
+            <div class="grid_item numpad"><button>6</button></div>
+            <div class="grid_item"><button><span></span></button></div>
+            <div class="grid_item numpad"><button>1</button></div>
+            <div class="grid_item numpad"><button>2</button></div>
+            <div class="grid_item numpad"><button>3</button></div>
+            <div class="grid_item"><button><span></span></button></div>
+            <div class="grid_item numpad"><button></button></div>
+            <div class="grid_item numpad"><button>0</button></div>
+            <div class="grid_item numpad"><button>,</button></div>
+            <div class="grid_item equalSign"><button>=</button></div>
+        </div>
+
+    </div>
+</body>
+
+</html>
