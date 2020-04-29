@@ -1,17 +1,17 @@
-body {
+/* body { */
     /* background: linear-gradient(to bottom, #0e2a63 0%, #2a9fec 100%); */
-    background-image: url("https://i.pinimg.com/originals/ff/33/9b/ff339bf38d4d19a87008eaa11bf2f4c0.jpg");
+    /* background-image: url("https://i.pinimg.com/originals/ff/33/9b/ff339bf38d4d19a87008eaa11bf2f4c0.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
     justify-content: center;
-    align-items: center;
-}
+    align-items: center; */
+/* } */
 
-.container {
+/* .container { */
     /* the main thing,exact calculator */
     /* border: solid rgb(59, 226, 226) 0.7px; */
-    border: solid rgb(126, 126, 126) 0.7px;
+    /* border: solid rgb(126, 126, 126) 0.7px;
     padding: 5px;
     width: 320px;
     height: 500px;
@@ -19,69 +19,66 @@ body {
     background-color: rgba(37, 37, 37, 0.801);
     backdrop-filter: blur(8px);
     font-family: 'Roboto', sans-serif;
-}
+} */
 
-.view_head {
-    /* line that contain name and window btn`s */
-    /* border: blue solid 2px; */
+/* .view_head {
+    /* line that contain name and window btn`s 
     padding: 3px 5px;
     color: white;
     font-size: small;
-}
+} */
 
-.view_head_buttons_container {
+/* .view_head_buttons_container {
     display: flex;
     justify-content: space-between;
     float: right;
     width: 105px;
     margin-right: 8px;
-}
+} */
 
-.view_head_button {
-    /* common rules for btn`s of this part */
-    /* float: right; */
+/* .view_head_button {
+    /* common rules for btn`s of this part 
     border: none;
     background-color: transparent;
     padding: 0;
     height: 12px;
     width: 12px;
-    /* margin: auto 15px; */
-}
+} */
 
-.view_head_button__underscore {
+/* .view_head_button__underscore {
     color: white;
     font-size: large;
-}
+} */
 
-.view_head_button__fullscreen>span {
+/* .view_head_button__fullscreen>span {
     background: url("files/square_btn.png");
-}
+} */
 
-.view_head_button__close>span {
+/* .view_head_button__close>span {
     background: url("files/close_btn.png");
-}
+} */
 
-.view_head_button>span {
-    /* comon rules for span insede btn`s for icons */
+/* .view_head_button>span {
+    /* comon rules for span insede btn`s for icons 
     background-size: contain;
     display: inline-block;
     height: 12px;
     width: 12px;
-}
+} */
 
-.menu_row {
+/* .menu_row {
     color: rgb(255, 255, 255);
     height: 50px;
     align-items: center;
     font-size: 20px;
     margin-top: 8px;
-}
+} */
 
-.menu_row>span {
+/* .menu_row>span {
     margin-left: 15px;
-}
+} */
 
-.input_field {
+/* .input_field {
     background-color: transparent;
     border: transparent;
     margin-top: 8px;
@@ -91,52 +88,52 @@ body {
     color: white;
     font-size: 5vh;
     font-weight: bold;
-}
+} */
 
-button {
+/* button {
     background-color: transparent;
     border: unset;
-}
+} */
 
-.menu_row button>span {
-    /* the main styles for all spans inside buttons */
+/* .menu_row button>span {
+    /* the main styles for all spans inside buttons 
     background-size: contain;
     display: inline-block;
     height: 15px;
     width: 15px;
-}
+} */
 
-.menu_button_timeMachine {
+/* .menu_button_timeMachine {
     float: right;
-}
+} */
 
-#timeMachine_icon {
+/* #timeMachine_icon {
     height: 20px;
     width: 20px;
-}
+} */
 
-.menu_button_timeMachine>span {
+/* .menu_button_timeMachine>span {
     background: url("files/icons8-time-machine-24.png");
-}
+} */
 
-.menu_button_collapse>span {
+/* .menu_button_collapse>span {
     background: url("files/expand.png");
-}
+} */
 
-.menu_button>span {
+/* .menu_button>span {
     background: url("files/menu.png");
 
-}
+} */
 
-.strange_btns {
-    /* border: thin solid gray; */
+/* .strange_btns {
+    /* border: thin solid gray; 
     margin-top: 30px;
     height: 28px;
     width: 100%;
     display: flex;
-}
+} */
 
-.strange__btn {
+/* .strange__btn {
     height: 100%;
     flex-grow: 1;
     width: auto;
@@ -145,12 +142,12 @@ button {
     color: white;
     font-weight: 700;
     font-size: 12px;
-    /* font-family: 'Roboto', sans-serif; */
-}
+    /* font-family: 'Roboto', sans-serif; 
+} */
 
-.strange__btn__passive {
+/* .strange__btn__passive {
     color: rgba(145, 141, 141, 0.555);
-}
+} */
 
 .grid_container {
     display: grid;
