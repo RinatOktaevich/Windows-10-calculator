@@ -139,3 +139,59 @@ button {
 .strange_btns .strange__btn__passive {
 		color: rgba(145, 141, 141, 0.555);
 }
+
+.grid_container {
+		display: grid;
+		grid-template-columns: 25% 25% 25% 25%;
+		height: 47vh;
+}
+.grid_container .grid_item {
+		background-color: rgba(19, 19, 19, 0.603);
+		margin: 1px;
+}
+.grid_container .grid_item > button {
+		color: white;
+		height: 100%;
+		width: 100%;
+}
+.grid_container .grid_item > button > span {
+		background-size: contain;
+		display: inline-block;
+		width: 20px;
+		height: 20px;
+}
+.grid_container .grid_item:nth-child(4) > button > span {
+		background-image: url("files/backspace.png");
+		margin-top: 4px;
+		margin-right: 2px;
+}
+.grid_container .grid_item:nth-child(8) > button > span {
+		background-image: url("files/divide.png");
+		width: 15px;
+		height: 15px;
+}
+.grid_container .grid_item:nth-child(12) > button > span {
+		background-image: url("files/multiplication.png");
+		width: 13px;
+		height: 13px;
+}
+.grid_container .grid_item:nth-child(16) > button > span {
+		background-image: url("files/minus.png");
+		width: 15px;
+		height: 15px;
+}
+.grid_container .grid_item:nth-child(20) > button > span {
+		background-image: url("files/plus.png");
+		width: 15px;
+		height: 15px;
+}
+.grid_container .equalSign {
+		/* some background color for = btn */
+		background-color: #3c4653;
+}
+.grid_container .equalSign > button {
+		font-size: 30px;
+}
+.grid_container .numpad {
+		background-color: #060606;
+}

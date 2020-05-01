@@ -135,4 +135,58 @@ button {
     }
 }
 
-
+.grid_container {
+    display: grid;
+    grid-template-columns: 25% 25% 25% 25%;
+    height: 47vh;
+    .grid_item {
+        background-color: rgba(19, 19, 19, 0.603);
+        margin: 1px;
+        &>button {
+            color: white;
+            height: 100%;
+            width: 100%;
+            &>span {
+                background-size: contain;
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+            }
+        }
+        &:nth-child(4)>button>span {
+            background-image: url("files/backspace.png");
+            margin-top: 4px;
+            margin-right: 2px;
+        }
+        &:nth-child(8)>button>span {
+            background-image: url("files/divide.png");
+            width: 15px;
+            height: 15px;
+        }
+        &:nth-child(12)>button>span {
+            background-image: url("files/multiplication.png");
+            width: 13px;
+            height: 13px;
+        }
+        &:nth-child(16)>button>span {
+            background-image: url("files/minus.png");
+            width: 15px;
+            height: 15px;
+        }
+        &:nth-child(20)>button>span {
+            background-image: url("files/plus.png");
+            width: 15px;
+            height: 15px;
+        }
+    }
+    .equalSign {
+        /* some background color for = btn */
+        background-color: rgb(60, 70, 83);
+        &>button {
+            font-size: 30px;
+        }
+    }
+    .numpad {
+        background-color: rgb(6, 6, 6);
+    }
+}
