@@ -12,7 +12,7 @@ body {
     /* the main thing,exact calculator */
     /* border: solid rgb(59, 226, 226) 0.7px; */
     border: solid rgb(126, 126, 126) 0.7px;
-    padding: 5px;
+    padding: 5px 3px;
     width: 320px;
     height: 500px;
     flex-direction: column;
@@ -32,6 +32,12 @@ button {
     display: inline-block;
     height: 15px;
     width: 15px;
+}
+
+@mixin size($height,
+$width:$height) {
+    height: $height;
+    width: $width;
 }
 
 .view_head {
@@ -138,19 +144,18 @@ button {
 .grid_container {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
-    height: 47vh;
+    grid-template-rows: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
+    height: 47.4vh;
     .grid_item {
         background-color: rgba(19, 19, 19, 0.603);
         margin: 1px;
         &>button {
             color: white;
-            height: 100%;
-            width: 100%;
+            @include size(100%);
             &>span {
                 background-size: contain;
                 display: inline-block;
-                width: 20px;
-                height: 20px;
+                @include size(20px);
             }
         }
         &:nth-child(4)>button>span {
@@ -160,30 +165,27 @@ button {
         }
         &:nth-child(8)>button>span {
             background-image: url("files/divide.png");
-            width: 15px;
-            height: 15px;
+            @include size(15px);
         }
         &:nth-child(12)>button>span {
             background-image: url("files/multiplication.png");
-            width: 13px;
-            height: 13px;
+            @include size(13px);
         }
         &:nth-child(16)>button>span {
             background-image: url("files/minus.png");
-            width: 15px;
-            height: 15px;
+            @include size(15px);
         }
         &:nth-child(20)>button>span {
             background-image: url("files/plus.png");
-            width: 15px;
-            height: 15px;
+            @include size(15px);
         }
-    }
-    .equalSign {
-        /* some background color for = btn */
-        background-color: rgb(60, 70, 83);
-        &>button {
-            font-size: 30px;
+        &:nth-child(24)>button {
+            background-color: rgb(60, 70, 83);
+            &>span {
+                background-image: url("files/equal.png");
+                @include size(18px);
+                margin-top: 8px;
+            }
         }
     }
     .numpad {
