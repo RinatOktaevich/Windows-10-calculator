@@ -30,7 +30,9 @@
             <button class="menu_button_collapse"><span></span></button>
             <button class="menu_button_timeMachine"><span></span></button>
         </div>
-        <input type="number" nuumber value="0" class="input_field">
+        <form action="" name="formatto">
+            <input type="text" name="textview" readonly  class="input_field">
+        </form>
         <div class="strange_btns">
             <button class="strange__btn__passive">MC</button>
             <button class="strange__btn__passive">MR</button>
@@ -43,7 +45,7 @@
             <div class="grid_item"><button>%</button></div>
             <div class="grid_item"><button>CE</button></div>
             <div class="grid_item"><button>C</button></div>
-            <div class="grid_item"><button><span></span></button></div>
+            <div class="grid_item"><button onclick="endCut()"><span></span></button></div>
             <div class="grid_item">
                 <button>
             1/x
@@ -61,26 +63,28 @@
             </sup>√<span style="text-decoration: overline;">x</span>
 
             </button></div>
-            <div class="grid_item"><button><span></span></button></div>
-            <div class="grid_item numpad"><button>7</button></div>
-            <div class="grid_item numpad"><button>8</button></div>
-            <div class="grid_item numpad"><button>9</button></div>
-            <div class="grid_item"><button><span></span></button></div>
-            <div class="grid_item numpad"><button>4</button></div>
-            <div class="grid_item numpad"><button>5</button></div>
-            <div class="grid_item numpad"><button>6</button></div>
-            <div class="grid_item"><button><span></span></button></div>
-            <div class="grid_item numpad"><button>1</button></div>
-            <div class="grid_item numpad"><button>2</button></div>
-            <div class="grid_item numpad"><button>3</button></div>
-            <div class="grid_item"><button><span></span></button></div>
+            <div class="grid_item"><button onclick="insert('/')"><span></span></button></div>
+            <div class="grid_item numpad"><button onclick="insert(7)">7</button></div>
+            <div class="grid_item numpad"><button onclick="insert(8)">8</button></div>
+            <div class="grid_item numpad"><button onclick="insert(9)">9</button></div>
+            <div class="grid_item"><button onclick="insert('*')"><span></span></button></div>
+            <div class="grid_item numpad"><button onclick="insert(4)">4</button></div>
+            <div class="grid_item numpad"><button onclick="insert(5)">5</button></div>
+            <div class="grid_item numpad"><button onclick="insert(6)">6</button></div>
+            <div class="grid_item"><button onclick="insert('-')"><span></span></button></div>
+            <div class="grid_item numpad"><button onclick="insert(1)">1</button></div>
+            <div class="grid_item numpad"><button onclick="insert(2)">2</button></div>
+            <div class="grid_item numpad"><button onclick="insert(3)">3</button></div>
+            <div class="grid_item"><button onclick="insert('+')"><span></span></button></div>
             <div class="grid_item numpad"><button></button></div>
-            <div class="grid_item numpad"><button>0</button></div>
-            <div class="grid_item numpad"><button>,</button></div>
-            <div class="grid_item "><button><span></span></button></div>
+            <div class="grid_item numpad"><button onclick="insert(0)">0</button></div>
+            <div class="grid_item numpad"><button onclick="insert(`,`)">,</button></div>
+            <div class="grid_item "><button onclick="process()"><span></span></button></div>
         </div>
 
     </div>
 </body>
 
+
+<script src="logic.js"></script>
 </html>
