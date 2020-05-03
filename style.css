@@ -66,6 +66,30 @@ button {
 		width: 12px;
 }
 
+.side_menu {
+		position: fixed;
+		top: 32px;
+		left: 0;
+		background-color: #222324;
+		overflow-x: hidden;
+		height: 93.5%;
+		width: 50%;
+}
+.side_menu .content {
+		margin-top: 40px;
+		width: 130px;
+		color: white;
+}
+.side_menu .content h3 {
+		margin-left: 5px;
+		margin-bottom: 5px;
+		font: inherit bold;
+}
+.side_menu .content button {
+		color: inherit;
+		float: right;
+}
+
 .menu_row {
 		color: white;
 		height: 50px;
@@ -144,7 +168,7 @@ button {
 		display: grid;
 		grid-template-columns: 25% 25% 25% 25%;
 		grid-template-rows: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
-		height: 47.4vh;
+		height: 292px;
 }
 .grid_container .grid_item {
 		background-color: rgba(19, 19, 19, 0.603);

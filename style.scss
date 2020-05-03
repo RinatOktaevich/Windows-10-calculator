@@ -26,6 +26,11 @@ button {
     border: unset;
 }
 
+@mixin highlight ($color:white) {
+    border:dashed $color 1px;
+}
+
+
 @mixin btn_icon {
     /* the main styles for all spans inside buttons */
     background-size: contain;
@@ -77,6 +82,36 @@ $width:$height) {
             }
         }
     }
+}
+
+.side_menu {
+    $top-offset: 32px;
+    position: fixed;
+    top: $top-offset;
+    left: 0;
+    background-color: #222324;
+    overflow-x: hidden;
+    height: 93.5%;
+    width: 50%;
+    & .content {
+        margin-top: 40px;
+        width: 130px;
+        color: white;
+        // @include highlight ();
+        & h3{
+            margin-left: 5px;
+            margin-bottom: 5px;
+            font:inherit bold;
+            
+        }
+
+        & button {
+            color: inherit;
+            float: right;
+            // @include highlight ();
+        }
+    }
+    // width: 0;
 }
 
 .menu_row {
@@ -145,7 +180,7 @@ $width:$height) {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     grid-template-rows: 16.666% 16.666% 16.666% 16.666% 16.666% 16.666%;
-    height: 47.4vh;
+    height: 292px;
     .grid_item {
         background-color: rgba(19, 19, 19, 0.603);
         margin: 1px;
