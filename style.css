@@ -73,7 +73,8 @@ button {
 		background-color: #222324;
 		overflow-x: hidden;
 		height: 93.5%;
-		width: 50%;
+		width: 52%;
+		width: 0;
 }
 .side_menu .content {
 		margin-top: 40px;

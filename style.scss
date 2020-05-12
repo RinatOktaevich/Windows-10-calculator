@@ -92,7 +92,8 @@ $width:$height) {
     background-color: #222324;
     overflow-x: hidden;
     height: 93.5%;
-    width: 50%;
+    width: 52%;
+    width: 0;
     & .content {
         margin-top: 40px;
         width: 130px;
@@ -102,7 +103,6 @@ $width:$height) {
             margin-left: 5px;
             margin-bottom: 5px;
             font:inherit bold;
-            
         }
 
         & button {
@@ -111,7 +111,6 @@ $width:$height) {
             // @include highlight ();
         }
     }
-    // width: 0;
 }
 
 .menu_row {
