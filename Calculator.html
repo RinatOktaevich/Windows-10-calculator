@@ -14,15 +14,15 @@
 
 <body>
     <div class="container">
-        <div class="view_head">
+        <section class="view_head">
             <span>Калькулятор</span>
             <div class="view_head_buttons_container">
                 <button class="view_head_button view_head_button__underscore"><span>-</span></button>
                 <button class="view_head_button view_head_button__fullscreen"><span></span></button>
                 <button class="view_head_button view_head_button__close"><span></span></button>
             </div>
-        </div>
-        <div class="side_menu">
+        </section>
+        <div id="sideMenu" class="side_menu" style="width: 0px;">
             <div class="content">
                 <h3>Choose theme:</h3>
                 <button class="light_theme">Light Theme</button>
@@ -30,26 +30,26 @@
             </div>
         </div>
 
-        <div class="menu_row">
-            <button class="menu_button" onclick="">
+        <section class="menu_row">
+            <button class="menu_button" onclick="toggleSideMenu()">
                 <span></span>
             </button>
             <span>Обычный</span>
             <button class="menu_button_collapse"><span></span></button>
             <button class="menu_button_timeMachine"><span></span></button>
-        </div>
+        </section>
         <form action="" name="formatto">
             <input type="text" name="textview" readonly class="input_field">
         </form>
-        <div class="strange_btns">
+        <section class="strange_btns">
             <button class="strange__btn__passive">MC</button>
             <button class="strange__btn__passive">MR</button>
             <button>M+</button>
             <button>M-</button>
             <button>MS</button>
             <button class="strange__btn__passive">M*</button>
-        </div>
-        <div class="grid_container">
+        </section>
+        <section class="grid_container">
             <div class="grid_item"><button>%</button></div>
             <div class="grid_item"><button onclick="cleanInput()">CE</button></div>
             <div class="grid_item"><button onclick="cleanInput()">C</button></div>
@@ -88,7 +88,7 @@
             <div class="grid_item numpad"><button onclick="addSymbol(0)">0</button></div>
             <div class="grid_item numpad"><button onclick="addSymbol(`,`)">,</button></div>
             <div class="grid_item "><button onclick="process()"><span></span></button></div>
-        </div>
+        </section>
 
     </div>
 </body>

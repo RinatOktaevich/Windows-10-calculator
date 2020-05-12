@@ -73,8 +73,6 @@ button {
 		background-color: #222324;
 		overflow-x: hidden;
 		height: 93.5%;
-		width: 52%;
-		width: 0;
 }
 .side_menu .content {
 		margin-top: 40px;
@@ -101,6 +99,9 @@ button {
 .menu_row > span {
 		margin-left: 15px;
 }
+.menu_row .menu_button {
+		position: relative;
+}
 .menu_row .menu_button > span {
 		background: url("files/menu.png");
 		/* the main styles for all spans inside buttons */
@@ -108,6 +109,7 @@ button {
 		display: inline-block;
 		height: 15px;
 		width: 15px;
+		z-index: 999;
 }
 .menu_row .menu_button_timeMachine {
 		float: right;

@@ -27,9 +27,8 @@ button {
 }
 
 @mixin highlight ($color:white) {
-    border:dashed $color 1px;
+    border: dashed $color 1px;
 }
-
 
 @mixin btn_icon {
     /* the main styles for all spans inside buttons */
@@ -92,19 +91,16 @@ $width:$height) {
     background-color: #222324;
     overflow-x: hidden;
     height: 93.5%;
-    width: 52%;
-    width: 0;
     & .content {
         margin-top: 40px;
         width: 130px;
         color: white;
         // @include highlight ();
-        & h3{
+        & h3 {
             margin-left: 5px;
             margin-bottom: 5px;
-            font:inherit bold;
+            font: inherit bold;
         }
-
         & button {
             color: inherit;
             float: right;
@@ -122,9 +118,15 @@ $width:$height) {
     &>span {
         margin-left: 15px;
     }
-    .menu_button>span {
-        background: url("files/menu.png");
-        @include btn_icon;
+    .menu_button {
+
+        position: relative;
+
+        &>span {
+            background: url("files/menu.png");
+            @include btn_icon;
+            z-index: 999;
+        }
     }
     .menu_button_timeMachine {
         float: right;
