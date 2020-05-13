@@ -73,6 +73,7 @@ button {
 		background-color: #222324;
 		overflow-x: hidden;
 		height: 93.5%;
+		transition: 0.2s cubic-bezier(0.17, 0.67, 0.83, 0.67);
 }
 .side_menu .content {
 		margin-top: 40px;

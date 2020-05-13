@@ -107,6 +107,20 @@ $width:$height) {
             // @include highlight ();
         }
     }
+    // @keyframes fade {
+    //     from {
+    //         width: 0%;
+    //     }
+    //     to {
+    //         width: 52%;
+    //     }
+    // }
+    
+    // animation: fade 1s ease-in 0s alternate;
+
+    transition: 0.2s cubic-bezier(.17,.67,.83,.67);
+
+
 }
 
 .menu_row {
@@ -119,9 +133,7 @@ $width:$height) {
         margin-left: 15px;
     }
     .menu_button {
-
         position: relative;
-
         &>span {
             background: url("files/menu.png");
             @include btn_icon;
