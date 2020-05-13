@@ -11,14 +11,24 @@ body {
 .container {
     /* the main thing,exact calculator */
     /* border: solid rgb(59, 226, 226) 0.7px; */
-    border: solid rgb(126, 126, 126) 0.7px;
+    &.dark_theme {
+        background-color: rgba(37, 37, 37, 0.801);
+    }
+    &.light_theme {
+        background-color: rgba(241, 245, 188, 0.801);
+    }
+    border: solid rgb(126,126,126) 0.7px;
     padding: 5px 3px;
     width: 320px;
     height: 500px;
     flex-direction: column;
-    background-color: rgba(37, 37, 37, 0.801);
+    // background-color: rgba(37,
+    // 37,
+    // 37,
+    // 0.801);
     backdrop-filter: blur(8px);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Roboto',
+    sans-serif;
 }
 
 button {
@@ -88,14 +98,19 @@ $width:$height) {
     position: fixed;
     top: $top-offset;
     left: 0;
-    background-color: #222324;
+    &.dark_theme {
+        background-color: #222324;
+        color: white;
+    }
+    &.light_theme {
+        background-color: #d5e3f1;
+        color: rgb(8, 8, 20);
+    }
     overflow-x: hidden;
     height: 93.5%;
     & .content {
         margin-top: 40px;
         width: 130px;
-        color: white;
-        // @include highlight ();
         & h3 {
             margin-left: 5px;
             margin-bottom: 5px;
@@ -104,11 +119,12 @@ $width:$height) {
         & button {
             color: inherit;
             float: right;
-            // @include highlight ();
         }
     }
-   
-    transition: 0.2s cubic-bezier(1,.02,.66,1.1);
+    transition: 0.2s cubic-bezier(1,
+    .02,
+    .66,
+    1.1);
 }
 
 .menu_row {
@@ -126,6 +142,9 @@ $width:$height) {
             background: url("files/menu.png");
             @include btn_icon;
             z-index: 999;
+        }
+        &:hover {
+            background-color: rgb(60, 70, 83);
         }
     }
     .menu_button_timeMachine {

@@ -19,14 +19,32 @@ function process() {
 
 
 function toggleSideMenu() {
-
     let element = document.getElementById("sideMenu");
-
 
     if (element.style.width === "0px") {
         element.style.width = '52%';
     } else {
         element.style.width = '0px';
     }
+}
 
+
+function setDarkTheme() {
+    let elements = document.getElementsByClassName("dark_theme");
+
+    for (let index = 0; index < elements.length; index++) {
+        const classList = elements[index].classList;
+        // classList.replace("light_theme", "dark_theme");
+        classList.remove("light_theme");
+    }
+}
+
+function setLightTheme() {
+    let elements = document.getElementsByClassName("dark_theme");
+
+    for (let index = 0; index < elements.length; index++) {
+        const classList = elements[index].classList;
+        // classList.replace("dark_theme", "light_theme");
+        classList.add("light_theme");
+    }
 }

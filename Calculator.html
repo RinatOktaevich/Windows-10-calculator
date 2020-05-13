@@ -13,7 +13,7 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container dark_theme">
         <section class="view_head">
             <span>Калькулятор</span>
             <div class="view_head_buttons_container">
@@ -22,11 +22,11 @@
                 <button class="view_head_button view_head_button__close"><span></span></button>
             </div>
         </section>
-        <div id="sideMenu" class="side_menu" style="width: 0px;">
+        <div id="sideMenu" class="side_menu dark_theme" style="width: 0px;">
             <div class="content">
                 <h3>Choose theme:</h3>
-                <button class="light_theme">Light Theme</button>
-                <button class="dark_theme">Dark Theme</button>
+                <button onclick="setLightTheme()">Light Theme</button>
+                <button onclick="setDarkTheme()"> Dark Theme</button>
             </div>
         </div>
 
