@@ -45,9 +45,15 @@ button {
 		width: 105px;
 		margin-right: 8px;
 }
-.view_head .view_head_buttons_container .view_head_button__underscore {
-		color: white;
-		font-size: large;
+.view_head .view_head_buttons_container .view_head_button__underscore > span {
+		position: relative;
+		top: 6px;
+}
+.view_head .view_head_buttons_container .view_head_button__underscore > span.dark_theme {
+		background: url("files/minus.png");
+}
+.view_head .view_head_buttons_container .view_head_button__underscore > span.light_theme {
+		background: url("files/minus_drk.png");
 }
 .view_head .view_head_buttons_container .view_head_button__fullscreen > span {
 		background: url("files/square_btn.png");
@@ -63,7 +69,7 @@ button {
 		height: 12px;
 		width: 12px;
 }
-.view_head .view_head_buttons_container .view_head_button > span {
+.view_head .view_head_buttons_container .view_head_button > span.dark_theme {
 		/* comon rules for span insede btn`s for icons */
 		background-size: contain;
 		display: inline-block;
@@ -130,7 +136,7 @@ button {
 		float: right;
 }
 .menu_row .menu_button_timeMachine > span {
-		background: url("files/icons8-time-machine-24.png");
+		background: url("files/time_machine.png");
 		/* the main styles for all spans inside buttons */
 		background-size: contain;
 		display: inline-block;
