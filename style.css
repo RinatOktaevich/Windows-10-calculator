@@ -1,11 +1,18 @@
 body {
-		/* background: linear-gradient(to bottom, #0e2a63 0%, #2a9fec 100%); */
-		background-image: url("https://i.pinimg.com/originals/ff/33/9b/ff339bf38d4d19a87008eaa11bf2f4c0.jpg");
-		background-size: cover;
 		background-repeat: no-repeat;
 		display: flex;
 		justify-content: center;
 		align-items: center;
+}
+body.dark_theme {
+		background-image: url(files/windows-10-2560x1440.jpg);
+		background-size: 1920px 150vh;
+		background-position: -140px -154px;
+}
+body.light_theme {
+		background-image: url(files/windows_10_light_2k.jpeg);
+		background-size: 1688px 112vh;
+		background-position: -69px -24px;
 }
 
 .container {
@@ -22,9 +29,11 @@ body {
 }
 .container.dark_theme {
 		background-color: rgba(37, 37, 37, 0.801);
+		color: white;
 }
 .container.light_theme {
 		background-color: rgba(241, 245, 188, 0.801);
+		color: #0c0c0c;
 }
 
 button {
@@ -35,7 +44,7 @@ button {
 .view_head {
 		/* line that contain name and window btn`s */
 		padding: 3px 5px;
-		color: white;
+		color: inherit;
 		font-size: small;
 }
 .view_head .view_head_buttons_container {
@@ -55,11 +64,17 @@ button {
 .view_head .view_head_buttons_container .view_head_button__underscore > span.light_theme {
 		background: url("files/minus_drk.png");
 }
-.view_head .view_head_buttons_container .view_head_button__fullscreen > span {
+.view_head .view_head_buttons_container .view_head_button__fullscreen > span.dark_theme {
 		background: url("files/square_btn.png");
 }
-.view_head .view_head_buttons_container .view_head_button__close > span {
+.view_head .view_head_buttons_container .view_head_button__fullscreen > span.light_theme {
+		background: url("files/square_btn_drk.png");
+}
+.view_head .view_head_buttons_container .view_head_button__close > span.dark_theme {
 		background: url("files/close_btn.png");
+}
+.view_head .view_head_buttons_container .view_head_button__close > span.light_theme {
+		background: url("files/close_btn_drk.png");
 }
 .view_head .view_head_buttons_container .view_head_button {
 		/* common rules for btn`s of this part */
@@ -69,7 +84,7 @@ button {
 		height: 12px;
 		width: 12px;
 }
-.view_head .view_head_buttons_container .view_head_button > span.dark_theme {
+.view_head .view_head_buttons_container .view_head_button > span.dark_theme, .view_head .view_head_buttons_container .view_head_button > span.light_theme {
 		/* comon rules for span insede btn`s for icons */
 		background-size: contain;
 		display: inline-block;
