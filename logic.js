@@ -4,9 +4,6 @@
 })();
 
 
-
-
-
 function toggleSideMenu() {
     let element = document.getElementById("sideMenu");
 
@@ -30,11 +27,7 @@ function applyTheme(theme) {
         }
     }
 
-    if (theme != undefined) {
-        Cookies.set('theme', theme);
-    } else {
-        Cookies.set('theme', lastTheme);
-    }
+    theme == undefined ? Cookies.set('theme', lastTheme) : Cookies.set('theme', theme);
 }
 
 function lightTheme_btn_onclick() {
