@@ -10,7 +10,7 @@
     </style>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@rc/dist/js.cookie.min.js"></script>
     <link rel="stylesheet" href="resetStyles.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="Calculator.css">
 </head>
 
 <body class="colorAble">
@@ -31,18 +31,18 @@
             </div>
         </div>
 
-        <section class="menu_row">
+        <section class="menu_row colorAble">
             <button class="menu_button" onclick="toggleSideMenu()">
-                <span></span>
+                <span class="btn_icon"></span>
             </button>
-            <span>Обычный</span>
-            <button class="menu_button_collapse"><span></span></button>
-            <button class="menu_button_timeMachine"><span></span></button>
+            <span><b>Standard</b></span>
+            <button class="menu_button_collapse"><span class="btn_icon"></span></button>
+            <button class="menu_button_timeMachine"><span class="btn_icon"></span></button>
         </section>
         <form action="" name="formatto">
             <input type="text" name="textview" readonly class="input_field">
         </form>
-        <section class="strange_btns">
+        <section class="strange_btns colorAble">
             <button class="strange__btn__passive">MC</button>
             <button class="strange__btn__passive">MR</button>
             <button>M+</button>
@@ -50,7 +50,7 @@
             <button>MS</button>
             <button class="strange__btn__passive">M*</button>
         </section>
-        <section class="grid_container">
+        <section class="grid_container colorAble">
             <div class="grid_item"><button>%</button></div>
             <div class="grid_item"><button onclick="cleanInput()">CE</button></div>
             <div class="grid_item"><button onclick="cleanInput()">C</button></div>
